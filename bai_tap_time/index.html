@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      #page {
+        font-size: 24px;
+      }
+      .morning {
+        color: green;
+      }
+      .afternoon {
+        color: blue;
+      }
+      .evening {
+        color: red;
+      }
+      .seconds span {
+        animation: changeColorSecond 2s linear infinite;
+      }
+
+      @keyframes changeColorSecond {
+        0%,
+        100% {
+          color: red;
+        }
+        50% {
+          color: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="page" class="page">Xin chao</div>
+    <p id="time">Thoi gian se duoc hien o day</p>
+    <div class="seconds">Giay: <span>0</span></div>
+
+    <p id="text" style="color: blue">Van ban nay dang thay doi mau</p>
+
+    <script src="./js.Js"></script>
+  </body>
+</html>

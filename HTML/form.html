@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div id="page">
+      <h1>List King</h1>
+      <form action="#" method="post" id="fomrSignup">
+        <h2>Membership</h2>
+        <label for="package" class="checkbox">Select a package:</label>
+        <select id="package">
+          <option value="anual">1 year (50$)</option>
+          <option value="monthly">1 month (50$)</option>
+        </select>
+        <div id="packageHint" class="tip">
+          <input type="checkbox" name="" id="terms" />
+          <label for="terms" class="checkbox"
+            >Check to agree to terms & conditions</label
+          >
+          <div id="termsHint" class="warning"></div>
+          <input type="submit" name="" id="" value="Next" />
+        </div>
+      </form>
+    </div>
+    <script src="../js/form.js"></script>
+  </body>
+</html>
