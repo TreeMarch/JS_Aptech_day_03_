@@ -12,6 +12,17 @@ function packageHint(){
     elPackageHint.innerHTML = 'Save $10 if you pay for 1year'
   }
   else{
-    elPackageHint.innerHTML
+    elPackageHint.innerHTML = "Wise choice!";
   }
 }
+
+function checkTerms(event){
+  if(!elTerms.checked){
+    elTermsHint.innerHTML = 'You must agree to the terms.';
+    event.preventDefault();
+  }
+}
+
+//Create event listeners: submit calls checkTerms(), change calls packageHint()
+elForm.addEventListener('submit',checkTerms,false);
+elSelectPackage.addEventListener('change', packageHint, false);
